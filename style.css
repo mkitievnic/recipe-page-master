@@ -1,0 +1,276 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+.content-page{
+    width:95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-page h1{
+    font-family: 'Playfair Display';
+    font-size: 48px;
+    font-weight: 700;
+    padding:20px 0;
+}
+
+.content-page ul{
+    margin-inline-start: 27px;
+    color: #333333;
+}
+
+.content-page .list-title{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    font-style: italic;
+    width: 592px;
+    height: 51px;
+    list-style-image: url('6dots.svg');
+    list-style-type: circle;
+}
+
+.content-page .imgBx{
+    width:969px;
+    height: 470px;
+    border-radius: 12px;
+    margin:30px 0;
+}
+
+.content-page .imgBx img{
+    width: 100%;
+    height: 100%;
+}
+/* text-card */
+.parametersDashboard{
+    width: 216px;
+    height: 367px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    position:absolute;
+    left: 779px;
+    top: 711px;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.parametersDashboard .textParameters{
+    display:flex;
+    flex-direction:row;
+    padding:10px;
+    justify-content: center;
+    align-items: center;
+
+}
+.textParameters .subtitle-box, .textParameters .data{
+    display:block;
+    
+}
+.textParameters .subtitle-box{
+    font-size: 12px;
+}
+.textParameters .data{
+    font-size:14px;
+}
+.logo span{
+    display:block;
+    font-size:2rem;
+}
+.textParameters .logo{
+    width:42px;
+}
+.textParameters .text-card{
+    width:80px;
+}
+
+.logo .ico-restaurant{
+    color:#F2994A;
+}
+.logo .ico-clock{
+    color:#4F4F4F;
+}
+.text-card .subtitle-box{
+    color:#BDBDBD;
+}
+.text-card .data{
+    color:#333;
+}
+.text-card .color-text{
+    color:#F2994A;
+}
+.textParameters .text-card, .textParameters .logo{
+    padding:5px;
+    height: 50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/******-------********/
+.content-page .title{
+    font-weight: 700;
+    font-family: 'Playfair Display';
+    font-size:24px;
+    padding:20px 0;
+}
+
+.content-page .subtitle{
+    font-weight: 400;
+    font-style: italic;
+    font-size:18px;
+    padding:15px 0;
+}
+.list-ingredients li{
+    list-style: none;
+    line-height: 1.8em;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.list-ingredients li p{
+    width:90%;
+}
+
+.list-ingredients li::before{
+    content:'';
+    width:21px;
+    height: 21px;
+    border:1px solid #828282;
+    padding:4px;
+    border-radius: 3px;
+    display:inline-block;
+    margin-right: 10px;
+   /*  background-image: url('/square.svg.svg');
+    background-size: cover; */
+}
+
+span{
+    font-weight: 800;
+}
+
+.numbered-list{
+    counter-reset: numberItem;
+    list-style-position: outside;
+    margin-bottom: 5px;
+    
+}
+.numbered-list li{
+    counter-increment: numberItem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width:100%;
+    margin-bottom: 15px;
+}
+.numbered-list li::before{
+    content: counter(numberItem);
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: orange;
+    color:#fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    width: 35px;
+   
+}
+
+.numbered-list li p{
+    display: inline-block;
+    width:90%;
+    text-align: justify;
+}
+.url-direction{
+    margin-bottom: 60px;
+}
+footer{
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 17px;
+    color:#828282;
+}
+
+@media (max-width:375px) {
+    .content-page h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        color:#000;
+    }
+    .content-page .imgBx {
+        width: 352px;
+        height: 214px;
+    }
+    .content-page .list-title {
+        font-size: 12px;
+        width: 297px;
+    }
+    .parametersDashboard {
+        width: 100%;
+        height: auto;
+        left: 0px;
+        top: 80px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+    .parametersDashboard .textParameters{
+        width:100%;
+        
+    }
+    .parametersDashboard .textParameters:nth-child(1){
+        width:100%;
+        justify-content: flex-start;
+    }
+    .parametersDashboard .textParameters:nth-child(2){
+        width:33.3333%;
+    }
+    .parametersDashboard .textParameters:nth-child(3){
+        width:33.3333%;
+    }
+    .parametersDashboard .textParameters:nth-child(4){
+        width:33.3333%;
+    }
+    .textParameters .subtitle-box {
+        font-size: 8px;
+    }
+    .textParameters .data {
+        font-size: 10px;
+    }
+    .parametersDashboard{
+        position:static;
+    }
+
+    .content-page .title {
+        font-size: 18px;
+    }
+    .content-page .subtitle {
+        font-size: 16px;
+    }
+    .list-ingredients li p {
+        font-size:14px;
+    }
+    .numbered-list li p {
+        font-size:16px;
+    }
+    .numbered-list li::before {
+       font-size: 24px;
+    }
+    .url-direction {
+        font-size:12px;
+    }
+}
